@@ -1,0 +1,17 @@
+{
+  "index": {
+    "one": "ein",
+    "two": "zwei",
+    "three": "drei",
+    "seo": {
+      "title": "index-de"
+    }
+  },
+  "page-2": {
+    "yes": "ja",
+    "no": "nein",
+    "seo": {
+      "title": "index-de"
+    }
+  }
+}
