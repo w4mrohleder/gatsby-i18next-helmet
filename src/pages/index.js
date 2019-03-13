@@ -1,5 +1,5 @@
 import React from 'react'
-import { withNamespaces } from 'react-i18next'
+import { withTranslation } from 'react-i18next'
 
 import { Link } from '../locales'
 import Layout from '../components/layout'
@@ -17,4 +17,4 @@ const IndexPage = ({ t }) => (
   </Layout>
 )
 
-export default withNamespaces()(IndexPage)
+export default withTranslation()(IndexPage)

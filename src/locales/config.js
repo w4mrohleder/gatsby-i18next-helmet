@@ -1,6 +1,6 @@
 import i18n from 'i18next'
 import Backend from 'i18next-xhr-backend'
-import { reactI18nextModule } from 'react-i18next'
+import { initReactI18next } from 'react-i18next'
 
 const options = {
   fallbackLng: 'de',
@@ -27,7 +27,11 @@ if (process.browser) {
   i18n.use(Backend)
 }
 
-i18n.use(reactI18nextModule)
+if (!process.browser) {
+  i18n.loadNamespaces(['translations'])
+}
+
+i18n.use(initReactI18next)
 
 if (!i18n.isInitialized) i18n.init(options)
 

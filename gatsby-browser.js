@@ -53,6 +53,8 @@ if (window.location.pathname === '/' && lang === 'fr') {
   window.location.replace(`${window.location.origin}/fr`)
 }
 
+i18n.changeLanguage(lang)
+
 export const wrapRootElement = ({ element }) => {
   const ConnectedRootElement = (
     <I18nextProvider i18n={i18n} defaultNS='translations' initialLanguage={lang}>
