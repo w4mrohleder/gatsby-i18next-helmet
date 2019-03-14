@@ -14,10 +14,6 @@ const options = {
     escapeValue: false
   },
 
-  react: {
-    wait: true
-  },
-
   backend: {
     loadPath: '/locales/{{lng}}/{{ns}}.json'
   }
@@ -25,10 +21,6 @@ const options = {
 
 if (process.browser) {
   i18n.use(Backend)
-}
-
-if (!process.browser) {
-  i18n.loadNamespaces(['translations'])
 }
 
 i18n.use(initReactI18next)

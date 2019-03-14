@@ -57,7 +57,7 @@ i18n.changeLanguage(lang)
 
 export const wrapRootElement = ({ element }) => {
   const ConnectedRootElement = (
-    <I18nextProvider i18n={i18n} defaultNS='translations' initialLanguage={lang}>
+    <I18nextProvider i18n={i18n}>
       <Provider store={store}>{element}</Provider>
     </I18nextProvider>
   )
